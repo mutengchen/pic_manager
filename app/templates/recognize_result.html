@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}<!--自定义模板区域-->
+    <div>识别结果如下：</div>
+{% if info %}
+    {% for k in info %}
+    <div>
+        <img src="{{ k }}?tempid="+Math.random()>
+    </div>
+    {% endfor %}
+{% endif %}
+{% endblock %}
+<script type="javascript">
+</script>
